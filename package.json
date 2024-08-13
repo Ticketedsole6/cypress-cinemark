@@ -1,0 +1,23 @@
+{
+  "name": "cypress-cinemark",
+  "version": "1.0.0",
+  "description": "Business Case Cinemark",
+  "main": "index.js",
+  "scripts": {
+    "cy:runTestHeadless": "cypress run --headless --browser chrome --spec cypress/e2e/*.cy.js",
+    "cy:runTestHeaded": "cypress run --headed --browser chrome --spec cypress/e2e/*.cy.js"
+  },
+  "keywords": [
+    "cypress",
+    "e2e",
+    "POM",
+    "javaScript"
+  ],
+  "author": "Juan Felipe Gómez",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.13.2",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "prettier": "^3.3.3"
+  }
+}
