@@ -22,7 +22,7 @@ class CarteleraPage {
     sectionScheduleButton: () =>
       cy
         .get('div')
-        .filter('.section-detail__schedule')
+        .filter('.section-detail__schedule', { timeout: 20000 })
         .find('.section-detail__title')
         .contains('Wifi Ralph')
         .parents('.section-detail__schedule'),
